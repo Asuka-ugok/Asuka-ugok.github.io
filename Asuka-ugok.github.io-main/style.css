@@ -1,3 +1,221 @@
-p {
-  color: firebrick;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #070707;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*
+wrapper {
+
+  max-width: 100%;
+  position: relative;
+}
+*/
+
+.bg-image {
+  background: url(images/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.15);
+  background-blend-mode: lighten;
+  width: 100%;
+  height: 760px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  opacity: 95%;
+  font-family: "Miltonian Tattoo";
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  height: 81px;
+  width: 100%;
+  padding: 0 70px;
+  z-index: 100;
+}
+
+
+
+.h-title {
+  margin-top: 50px;
+  font-size: 45px;
+
+}
+
+
+ul {
+  display: flex;
+}
+
+.h-menu {
+  list-style: none;
+  font-size: 31px;
+  padding-left: 60px;
+  margin-bottom: 12px;
+
+}
+
+.big-name {
+  font-family: "Allura";
+  position: absolute;
+  top: 310px;
+  left: 170px;
+  font-size: 160px;
+  transform: rotate(-12deg);
+  /*文字の傾きを変える方法*/
+
+  z-index: 5;
+}
+
+.page-wrapper{
+  position: relative;
+  margin: 0 140px;
+  margin-top: 150px;
+}
+
+
+
+
+.tool{
+  display: flex;
+}
+
+
+
+.page-title {
+  margin-bottom: 80px;
+  font-size: 60px;
+  font-family: 'Sofia', cursive;
+  position: static;
+}
+
+.skill-discription{
+  margin: 0 50px;
+}
+
+.discription{
+/*  margin-top: 80px;*/
+  font-size: 20px;
+  width: 600px;
+}
+
+.web-create{
+  margin-top: 40px;
+}
+
+
+.profile{
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.profile-sns{
+  position: absolute;
+  top: 390px;
+  left: 450px;
+}
+
+.profile>img{
+  width: 400px;
+  height: 300px;
+  
+  
+  margin-left: 80px;
+  object-fit:scale-down;
+  border: solid 8px;
+}
+.bubble-logo{
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.discription2{
+  margin-left: 25px;
+}
+
+/*
+.bubble{
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+  border-radius: 100%;
+ 
+}
+*/
+
+.products{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.product:hover{
+  
+}
+
+.product>img{
+ width: 500px;
+height: 300px;
+  object-fit: cover;
+}
+
+
+
+
+
+@keyframes rotate{
+  0%{transform: rotate( 0 );}
+  100%{transform: rotate( 360deg );}
+}
+
+
+
+
+/*
+.background{
+  margin: 0 auto;
+  background-image: url(images/bg-img.jpg);
+  width: 100%;
+  height: 700px;
+ 
+ 
+}
+*/
+
+/*
+.bg-img {
+  background-image: url(images/bg-img.jpg);
+  position: relative;
+  width: 100%;
+  height: 890px;
+  opacity: 100%;
+  margin-top: 130px;
+  z-index: 0;
+}
+*/
+
+.sns {
+  position: absolute;
+  top: 550px;
+  right: 60px;
 }

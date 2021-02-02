@@ -1,13 +1,128 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>初めてのウェブページ</title>
-     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>あすかのホームページ</h1>
-    <p>これは私が初めて作ったウェブページです。</p>
-  </body>
-</html>
+
+<head>
+  <meta charset="utf-8">
+  <meta lang="ja">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="あすかのポートフォリオサイトです。">
+  <title>初めてのウェブページ</title>
+  <link href="https://unpkg.com/ress/dist/ress.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Miltonian+Tattoo" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="background">
+
+
+  <header>
+    <h1 class="h-title">Asuka's Portfolio</h1>
+    <ul>
+      <li class="h-menu"><a href="#about">About</a></li>
+      <li class="h-menu"><a href="#skills">Skills</a></li>
+      <li class="h-menu"><a href="#works">Works</a></li>
+    </ul>
+  </header>
+
+
+  <div class="bg-image">
+    <span class="big-name">Asuka's Portfolio</span>
+    <div class="sns">
+      <img src="images/insta.png" width="44px" height="43px">
+      <img src="images/twi-bird.png" width="52px" height="43px">
+    </div>
+  </div>
+  
+  <main>
+  <section class="About page-wrapper">
+    <h1 class="page-title" id="about">About</h1>
+    <div class="profile">
+      <p class="discription">大学では、研究活動・Web制作・アプリ開発に取り組んでいます。
+        <br><br>普段は、TwitterやALIS・noteにて学習成果や進捗について発信しています。
+      </p>
+
+      <img src="images/asuka2.jpg">
+
+    </div>
+    <div class="profile-sns">
+      <img src="images/insta.png" width="44px" height="43px">
+      <img src="images/twi-bird.png" width="52px" height="43px">
+    </div>
+  </section>
+  
+    <div class="bubble rotate"></div>
+    <div class="page-wrapper">
+      
+      
+    <section class="Skills">
+      <h1 class="page-title" id="skills">Skills</h1>
+      <div class="discription skill-discription">
+        <h2 class="skillTitle">アプリ開発</h2>
+        <div class="discription2">
+          <p>ノーコードでアプリ制作を行っています。</p>
+          <div class="tool">
+            <br>使用ツール<br><span><img class="bubble-logo" src="images/bubble-logo1.png" width="150px"></span>
+          </div>
+        </div>
+
+        <h2 class="skillTitle web-create">Webサイト制作</h2>
+        <div class="discription2">
+          <p>これまで、架空店舗の紹介サイトや自己紹介サイトなどを制作しました。</p>
+          <div class="tool">
+          <br>使用ツール<br><span><img class="bubble-logo" src="images/bubble-logo1.png" width="150px"></span>
+        </div>
+        </div>
+      </div>
+</section>
+
+    </div>
+  <section class="Product page-wrapper">
+      <h1 class="page-title" id="works">Works</h1>
+    
+    <div class="products">
+    <div class="product">
+      <img src="images/portfolio1.png">
+      <h3>初代ポートフォリオサイト</h3>
+      <div>2020/08~2020/09</div>
+      </div>
+      
+    <div class="product">
+      <img src="images/reading%20record.png">
+      <h3>Reading Record</h3>
+      <div>2020/11~2020/12</div>
+      </div>
+      
+      <div class="product">
+      <img src="images/reading%20record.png">
+      <h3>Reading Record</h3>
+      <div>2020/11~2020/12</div>
+      </div>
+      
+      
+      <div class="product">
+      <img src="images/reading%20record.png">
+      <h3>Reading Record</h3>
+      <div>2020/11~2020/12</div>
+      </div>
+    
+    </div>
+  
+    
+    
+</section>    
+  </main>
+
+
+
+</body>
+<script>
+  $('.bubble').animate({
+        borderTopLeftRadius: String(Math.round((Math.random() * randomness02 + threshold02)) + 'px'),
+        borderTopRightRadius: String(Math.round((Math.random() * randomness + threshold)) + 'px'),
+        borderBottomLeftRadius: String(Math.round((Math.random() * randomness + threshold)) + 'px'),
+        borderBottomRightRadius: String(Math.round((Math.random() * randomness02 + threshold02)) + 'px'),
+      }
+</script></html>
