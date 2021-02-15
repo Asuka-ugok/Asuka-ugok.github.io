@@ -3,7 +3,7 @@
 }
 
 html {
-  color: #070707;
+  color: #333;
   margin: 0;
   padding: 0;
   border: 0;
@@ -14,7 +14,7 @@ html {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #333;
 }
 
 
@@ -68,7 +68,7 @@ ul {
 
 }
 
-.h-menu:hover{
+a:hover{
   color: #fa25e5;
 }
 
@@ -183,7 +183,7 @@ ul {
   cursor: pointer;
 }
 
-.product > img:hover {
+.product img:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
   transform: translateY(-0.2em);
 
@@ -221,7 +221,7 @@ ul {
   width: 450px;
   height: 400px;
   left: -180px;
-  top: -250px;
+  top: -300px;
   border-radius: 60% 50% 40% 70%/50% 60% 40% 60%;
   z-index: -100;
 }
@@ -238,29 +238,29 @@ ul {
 
 .middle-bubble2 {
   background-color: rgba(192, 172, 250, 1);
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 350px;
   right: -200px;
-  border-radius: 90% 90% 60% 70%/70% 40% 80% 80%;
+  border-radius: 60% 80% 60% 70%/70% 40% 80% 80%;
   z-index: -1;
 }
 
 .bottom-bubble {
   background-color: rgba(250, 172, 228, 1);
-  width: 550px;
-  height: 350px;
+  width: 450px;
+  height: 390px;
   border-radius: 60% 50% 40% 70%/50% 60% 40% 60%;
+ top: 2500px;
   right: -200px;
   z-index: -20;
-  bottom: 550px;
 }
 
 .bottom-bubble2 {
   background-color: rgba(250, 247, 172, 1);
   width: 350px;
   height: 350px;
-  bottom: -100px;
-  left: -200px;
+  top: 4300px;
+  left: -100px;
   border-radius: 60% 50% 40% 70%/50% 60% 40% 60%;
   z-index: -1;
 }
@@ -293,6 +293,15 @@ main {
   margin: 0 140px;
 }
 
+
+footer{
+  text-align: center;
+  font-family: "Miltonian Tattoo";
+  font-size: 30px;
+  height: 30px;
+  margin: 150px 0 50px 0;
+}
+
 /*
 .background{
   margin: 0 auto;
@@ -322,14 +331,50 @@ main {
   right: 60px;
 }
 
-/*
-.product>img:hover{
-  background-blend-mode: color-burn;
-}
+/*worksページ*/
 
 
-.posters:hover{
-  border: solid;
-  border-color: aquamarine;
+.center{
+  text-align: center;
+  border-bottom: solid 3px;
+/*  border-radius: 95% 5% 4%;*/
+  border-bottom-color: rgba(192, 172, 250, 1); 
 }
-*/
+.work-wrapper{
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.work-title{
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.work-title::before,
+.work-title::after{
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 10px;
+  background: #333;
+}
+
+.work-explain{
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 25px;
+  
+}
+
+.work-size{
+  max-width: 600px;
+  width: 100%;
+  margin-top: 10px;
+}
