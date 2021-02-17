@@ -85,9 +85,15 @@ a:hover{
 }
 
 
+.page-wrapper{
+  text-align: center;
+  padding-bottom: 80px;
+}
+
 
 .page-title {
-  margin-top: 200px;
+  text-align: center;
+  padding-top: 110px;
   margin-bottom: 20px;
   font-size: 60px;
   font-family: 'Sofia', cursive;
@@ -104,12 +110,13 @@ a:hover{
   margin: 0 50px;
   display: flex;
   justify-content: space-around;
+  text-align: justify;
 }
 
 .profile-sns {
   position: absolute;
-  top: 390px;
-  left: 450px;
+  top: 483px;
+  left: 390px;
 }
 
 .profile > img {
@@ -123,24 +130,25 @@ a:hover{
 
 /*Skills*/
 
+/*
 .skill-discription {
-  margin: 0 50px;
+  margin-left: 55px;
 }
+*/
 
 .discription {
-  /*  margin-top: 80px;*/
+  
   font-size: 20px;
-  width: 600px;
-}
-
-.web-create {
+  width: 750px;
+  margin: 0 auto;
   margin-top: 40px;
 }
 
-
-.tool {
-  display: flex;
+.web-create {
+  margin-top: 80px;
 }
+
+
 
 .bubble-logo {
   margin-left: 60px;
@@ -148,34 +156,38 @@ a:hover{
 }
 
 .discription2 {
-  margin-left: 25px;
+  width:700px;
+  font-size: 20px;
+  margin:0 auto;
 }
 
 
 .skillTitle {
-  border-bottom: solid 5px;
+/*  margin-left: 10px;*/
+/*  border-bottom: solid 2.5px;*/
+  padding: 5px 0;
   margin-bottom: 20px;
+  border-bottom: solid;
+  border-top: solid;
+  border-radius: 9% 5% 6% 4%/5% 2% 5% 4%;
 }
 
 .skill-name {
-  margin-left: 65px;
+ border-bottom: dotted;
+margin: 0 auto;
+  width: 150px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-.tool > p {
-  margin-top: 20px;
-}
 
-.skill-img {
-  width: 100px;
-  margin-left: 35px
-}
 
 /*Works*/
 
 .products {
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 
 }
@@ -198,6 +210,7 @@ a:hover{
 
 .appli {
   display: flex;
+  
 }
 
 .product2 {
@@ -350,7 +363,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  padding-top: 100px;
   margin-bottom: 20px;
 }
 
@@ -365,9 +378,9 @@ footer{
 }
 
 .work-explain{
-  max-width: 680px;
+  max-width: 600px;
   margin: 0 auto;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 25px;
   
