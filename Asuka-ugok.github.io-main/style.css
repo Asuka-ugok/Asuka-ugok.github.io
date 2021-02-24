@@ -39,7 +39,7 @@ header {
   font-style: normal;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  /*  align-items: flex-end;*/
 
   height: 70px;
   width: 100%;
@@ -50,14 +50,15 @@ header {
 
 
 .h-title {
-  margin-top: 50px;
+  /*  margin-top: 50px;*/
   font-size: 35px;
-
+  margin-top: 20px;
 }
 
 
 ul {
   display: flex;
+  margin-top: 20px;
 }
 
 .h-menu {
@@ -68,7 +69,7 @@ ul {
 
 }
 
-a:hover{
+a:hover {
   color: #fa25e5;
 }
 
@@ -85,7 +86,7 @@ a:hover{
 }
 
 
-.page-wrapper{
+.page-wrapper {
   text-align: center;
   padding-bottom: 80px;
 }
@@ -117,7 +118,9 @@ a:hover{
   position: absolute;
   top: 483px;
   left: 460px;
+ 
 }
+
 
 .profile > img {
   width: 400px;
@@ -137,7 +140,7 @@ a:hover{
 */
 
 .discription {
-  
+
   font-size: 20px;
   width: 750px;
   margin: 0 auto;
@@ -156,10 +159,10 @@ a:hover{
 }
 
 .discription2 {
-  width:700px;
-/*  height: 350px;*/
+  width: 700px;
+  /*  height: 350px;*/
   font-size: 20px;
-  margin:0 auto;
+  margin: 0 auto;
   margin-bottom: 130px;
 }
 
@@ -167,15 +170,15 @@ a:hover{
 .skillTitle {
   margin: 0 auto;
   width: 240px;
-/*  margin-left: 10px;*/
-/*  border-bottom: solid 2.5px;*/
-/*  text-decoration: underline;*/
-/*  text-underline-position: above;*/
-  background:linear-gradient(transparent 75%, #FFFF00 0%);
-  
-/*  padding: 2px 0;*/
+  /*  margin-left: 10px;*/
+  /*  border-bottom: solid 2.5px;*/
+  /*  text-decoration: underline;*/
+  /*  text-underline-position: above;*/
+  background: linear-gradient(transparent 75%, #FFFF00 0%);
+
+  /*  padding: 2px 0;*/
   margin-bottom: 20px;
-/*
+  /*
   border-bottom: solid;
   border-top: solid;
   border-radius: 9% 5% 6% 4%/5% 2% 5% 4%;
@@ -183,8 +186,8 @@ a:hover{
 }
 
 .skill-name {
- border-bottom: dotted;
-margin: 0 auto;
+  border-bottom: dotted;
+  margin: 0 auto;
   width: 150px;
   margin-top: 30px;
   margin-bottom: 10px;
@@ -202,7 +205,8 @@ margin: 0 auto;
   flex-wrap: wrap;
 
 }
-.product{
+
+.product {
   cursor: pointer;
 }
 
@@ -210,18 +214,19 @@ margin: 0 auto;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
   transform: translateY(-0.2em);
 
-  
+
 }
+
 .posters:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
   transform: translateY(-0.2em);
 
-  
+
 }
 
 .appli {
   display: flex;
-  
+
 }
 
 .product2 {
@@ -274,7 +279,7 @@ margin: 0 auto;
   width: 450px;
   height: 390px;
   border-radius: 60% 50% 40% 70%/50% 60% 40% 60%;
- top: 2500px;
+  top: 2500px;
   right: -200px;
   z-index: -20;
 }
@@ -318,7 +323,7 @@ main {
 }
 
 
-footer{
+footer {
   text-align: center;
   font-family: "Miltonian Tattoo";
   font-size: 30px;
@@ -352,25 +357,31 @@ footer{
 .sns {
   position: absolute;
   top: 550px;
-  right: 60px;
+  right: 80px;
+}
+
+.sns-pic{
+  width: 50px; 
+  height: auto;
 }
 
 /*worksページ*/
 
 
-.center{
+.center {
   padding-top: 90px;
   text-align: center;
   border-bottom: solid 3px;
-/*  border-radius: 95% 5% 4%;*/
-  border-bottom-color: rgba(192, 172, 250, 1); 
+  /*  border-radius: 95% 5% 4%;*/
+  border-bottom-color: rgba(192, 172, 250, 1);
 }
-.work-wrapper{
+
+.work-wrapper {
   text-align: center;
   margin-bottom: 200px;
 }
 
-.work-title{
+.work-title {
   font-size: 28px;
   display: flex;
   align-items: center;
@@ -380,7 +391,7 @@ footer{
 }
 
 .work-title::before,
-.work-title::after{
+.work-title::after {
   content: "";
   display: block;
   width: 100px;
@@ -389,17 +400,115 @@ footer{
   background: #333;
 }
 
-.work-explain{
+.work-explain {
   max-width: 600px;
   margin: 0 auto;
   font-size: 20px;
   text-align: center;
   margin-bottom: 25px;
-  
+
 }
 
-.work-size{
+.work-size {
   max-width: 600px;
   width: 100%;
   margin-top: 10px;
+}
+
+
+@media (max-width: 760px) {
+  .h-title {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  .h-menu {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    /*    padding-bottom: 10px;*/
+  }
+
+  ul {
+    justify-content: space-around;
+    margin-top: 0;
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  
+  p{
+    font-size: 18px;
+  }
+  
+  .big-name{
+    font-size: 100px;
+    top: 180px;
+    left: 100px;
+  }
+  
+  .sns{
+    top: 500px;
+    right: 50px;
+  }
+  
+  .sns-pic{
+    width: 30px;
+  }
+  
+  .page-title{
+    margin: 0;
+    font-size: 45px;
+  }
+  
+  main{
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .profile > img {
+    width: 40%;
+    border: none;
+    margin: 0;
+  }
+  
+  .discription{
+    width: 50%;
+  }
+  
+  .profile-sns{
+    top: 480px;
+  left: 340px;
+  }
+  
+  .skillTitle,.work-title{
+    font-size: 21px;
+  }
+  
+  .discription2{
+    width: 100%;
+  }
+  .discription2>p,.work-explain{
+    margin: 0 45px;
+  }
+  
+  .work-explain{
+    font-size: 16.5px;
+  }
+  .bubble{
+    visibility: hidden;
+  }
+  
+  footer{
+    font-size: 25px;
+  }
+  
+  
 }
