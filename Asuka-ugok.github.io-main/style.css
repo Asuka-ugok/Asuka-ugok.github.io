@@ -111,7 +111,7 @@ top: 340px;
   position: relative;
 }
 .profile-contents{
-   width: 60%;
+   
    position: relative;
 }
 
@@ -131,10 +131,10 @@ top: 340px;
 
 
 .profile-sns {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding-right: 30px;
+  margin-top: 20px;
+
+  text-align: right;
+  
   
   /* top: 483px;
   left: 460px; */
@@ -162,7 +162,6 @@ top: 340px;
 .discription {
 
   font-size: 20px;
-  width: 750px;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -397,6 +396,7 @@ footer {
 }
 
 .work-wrapper {
+  width: 100%;
   text-align: center;
   margin-bottom: 200px;
 }
@@ -418,19 +418,20 @@ footer {
   height: 2px;
   margin: 10px;
   background: #333;
+  opacity: 20%;
 }
 
 .about-work{
-  width: 50%;
+  width: 80%;
 margin: 0 auto;
 }
 
 
 
 .work-explain {
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 23px;
   text-align: center;
   margin-bottom: 25px;
 
@@ -438,7 +439,7 @@ margin: 0 auto;
 
 .work-size {
   /* max-width: 600px; */
-  width: 80%;
+  width: 70%;
   margin-top: 10px;
 }
 
@@ -478,9 +479,13 @@ margin: 0 auto;
   .big-name{
     font-size: 100px;
     top: 180px;
-    left: 100px;
+    left: 70px;
   }
   
+.bg-image{
+  height: 600px;
+}
+
   .sns{
     top: 500px;
     right: 50px;
@@ -500,19 +505,33 @@ margin: 0 auto;
     width: 100%;
   }
   
-  .profile > img {
-    width: 40%;
+  .me {
+    width: 100%;
     border: none;
-    margin: 0;
+    margin-top: 45px;
+    
   }
   
+  
+  /* .discription{
+    width: 100%;
+  } */
   .discription{
-    width: 50%;
+    width: 200px;
   }
+
+  .profile-contents{
+    /* display: flex; */
+    
+    width: 100%;
+  }
+
+  
   
   .profile-sns{
-    top: 480px;
-  left: 340px;
+    width: 150px;
+    top: 365px;
+  left: 300px;
   }
   
   .skillTitle,.work-title{
@@ -537,5 +556,17 @@ margin: 0 auto;
     font-size: 25px;
   }
   
+  .work-title{
+    font-size: 18px;
+  }
+
+.work-explain{
+  text-align: justify;
+  margin-bottom: 5px;
+}
+.center{
+  font-size: 35px;
+}
+
   
 }
