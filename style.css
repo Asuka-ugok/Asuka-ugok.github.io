@@ -1,0 +1,489 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.discription > a {
+  color: #fa25e5;
+}
+
+.discription > a:hover {
+  color: #860f7a;
+  border-bottom: solid 2px #860f7a;
+  transition: 0.2s;
+}
+
+.bg-image {
+  background: url(images/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.15);
+  background-blend-mode: lighten;
+  width: 100%;
+  height: 760px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  opacity: 95%;
+  font-family: "Miltonian Tattoo";
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  /*  align-items: flex-end;*/
+
+  height: 70px;
+  width: 100%;
+  padding: 0 70px;
+  z-index: 100;
+}
+
+.h-title {
+  /*  margin-top: 50px;*/
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+ul {
+  display: flex;
+  margin-top: 20px;
+}
+
+.h-menu {
+  list-style: none;
+  font-size: 25px;
+  padding-left: 60px;
+  margin-bottom: 12px;
+}
+
+a:hover {
+  color: #fa25e5;
+}
+
+.big-name {
+  font-family: "Allura";
+  position: absolute;
+  top: 310px;
+  left: 170px;
+  font-size: 160px;
+  transform: rotate(-12deg);
+  /*文字の傾きを変える方法*/
+
+  z-index: 5;
+}
+
+.page-wrapper {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.page-title {
+  text-align: center;
+  padding-top: 110px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-family: "Sofia", cursive;
+  position: static;
+}
+
+/*About*/
+.About {
+  position: relative;
+}
+
+.profile {
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-around;
+  text-align: justify;
+}
+
+.profile-sns {
+  position: absolute;
+  top: 483px;
+  left: 460px;
+}
+
+.profile > img {
+  width: 400px;
+  height: 300px;
+  margin-left: 80px;
+  object-fit: scale-down;
+  border: solid 8px;
+}
+
+/*Skills*/
+
+/*
+.skill-discription {
+  margin-left: 55px;
+}
+*/
+
+.discription {
+  font-size: 20px;
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.web-create {
+  margin-top: 80px;
+}
+
+.bubble-logo {
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.discription2 {
+  width: 700px;
+  /*  height: 350px;*/
+  font-size: 20px;
+  margin: 0 auto;
+  margin-bottom: 130px;
+}
+
+.skillTitle {
+  margin: 0 auto;
+  width: 240px;
+  /*  margin-left: 10px;*/
+  /*  border-bottom: solid 2.5px;*/
+  /*  text-decoration: underline;*/
+  /*  text-underline-position: above;*/
+  background: linear-gradient(transparent 75%, #ffff00 0%);
+
+  /*  padding: 2px 0;*/
+  margin-bottom: 20px;
+  /*
+  border-bottom: solid;
+  border-top: solid;
+  border-radius: 9% 5% 6% 4%/5% 2% 5% 4%;
+*/
+}
+
+.skill-name {
+  border-bottom: dotted;
+  margin: 0 auto;
+  width: 150px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/*Works*/
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product {
+  cursor: pointer;
+}
+
+.product img:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.2em);
+}
+
+.posters:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.2em);
+}
+
+.appli {
+  display: flex;
+}
+
+.product2 {
+  height: 350px !important;
+  object-fit: scale-down !important;
+}
+
+.product-discription {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/*bubble*/
+
+.bubble {
+  z-index: -100;
+}
+
+.top-bubble {
+  background-color: rgba(192, 172, 250, 1);
+  width: 450px;
+  height: 400px;
+  left: -180px;
+  top: -300px;
+  border-radius: 60% 50% 40% 70%/50% 60% 40% 60%;
+  z-index: -100;
+}
+
+.middle-bubble {
+  background-color: rgba(250, 172, 228, 1);
+  width: 400px;
+  height: 350px;
+  top: 1900px;
+  left: -20px;
+  border-radius: 60% 50% 40% 70%/50% 60% 40% 60%;
+}
+
+.middle-bubble2 {
+  background-color: rgba(192, 172, 250, 1);
+  width: 400px;
+  height: 350px;
+  right: -200px;
+  border-radius: 60% 80% 60% 70%/70% 40% 80% 80%;
+  z-index: -1;
+}
+
+.bottom-bubble {
+  background-color: rgba(250, 172, 228, 1);
+  width: 450px;
+  height: 390px;
+  border-radius: 60% 50% 40% 70%/50% 60% 40% 60%;
+  top: 2500px;
+  right: -200px;
+  z-index: -20;
+}
+
+.bottom-bubble2 {
+  background-color: rgba(250, 247, 172, 1);
+  width: 350px;
+  height: 350px;
+  top: 4300px;
+  left: -100px;
+  border-radius: 60% 50% 40% 70%/50% 60% 40% 60%;
+  z-index: -1;
+}
+
+.top-bubble,
+.middle-bubble,
+.middle-bubble2,
+.bottom-bubble,
+.bottom-bubble2 {
+  position: absolute;
+  animation: rotation 2s ease 0s infinite alternate-reverse none running;
+}
+
+@keyframes rotation {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  100% {
+    transform: translate(0, -25px);
+  }
+}
+
+main {
+  margin: 0 140px;
+}
+
+footer {
+  text-align: center;
+  font-family: "Miltonian Tattoo";
+  font-size: 30px;
+  height: 30px;
+  margin: 150px 0 50px 0;
+}
+
+/*
+.background{
+  margin: 0 auto;
+  background-image: url(images/bg-img.jpg);
+  width: 100%;
+  height: 700px;
+ 
+ 
+}
+*/
+
+/*
+.bg-img {
+  background-image: url(images/bg-img.jpg);
+  position: relative;
+  width: 100%;
+  height: 890px;
+  opacity: 100%;
+  margin-top: 130px;
+  z-index: 0;
+}
+*/
+
+.sns {
+  position: absolute;
+  top: 550px;
+  right: 80px;
+}
+
+.sns-pic {
+  width: 50px;
+  height: auto;
+}
+
+/*worksページ*/
+
+.center {
+  padding-top: 90px;
+  text-align: center;
+  border-bottom: solid 3px;
+  /*  border-radius: 95% 5% 4%;*/
+  border-bottom-color: rgba(192, 172, 250, 1);
+}
+
+.work-wrapper {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.work-title {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+.work-title::before,
+.work-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 10px;
+  background: #333;
+}
+
+.work-explain {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.work-size {
+  max-width: 600px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (max-width: 760px) {
+  .h-title {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  .h-menu {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    /*    padding-bottom: 10px;*/
+  }
+
+  ul {
+    justify-content: space-around;
+    margin-top: 0;
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .big-name {
+    font-size: 100px;
+    top: 180px;
+    left: 100px;
+  }
+
+  .sns {
+    top: 500px;
+    right: 50px;
+  }
+
+  .sns-pic {
+    width: 30px;
+  }
+
+  .page-title {
+    margin: 0;
+    font-size: 45px;
+  }
+
+  main {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .profile > img {
+    width: 40%;
+    border: none;
+    margin: 0;
+  }
+
+  .discription {
+    width: 50%;
+  }
+
+  .profile-sns {
+    top: 480px;
+    left: 340px;
+  }
+
+  .skillTitle,
+  .work-title {
+    font-size: 21px;
+  }
+
+  .discription2 {
+    width: 100%;
+  }
+  .discription2 > p,
+  .work-explain {
+    margin: 0 45px;
+  }
+
+  .work-explain {
+    font-size: 16.5px;
+  }
+  .bubble {
+    visibility: hidden;
+  }
+
+  footer {
+    font-size: 25px;
+  }
+}
