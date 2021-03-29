@@ -406,6 +406,7 @@ footer {
   width: 100%;
   margin-top: 10px;
 }
+/*
 
 @media (max-width: 768px) {
   main {
@@ -438,12 +439,13 @@ footer {
   }
   .skillTitle {
     font-size: 1.5em;
-    /* width: 90%;
-  text-align: left; */
+     width: 90%;
+  text-align: left; 
   }
 }
+*/
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   * {
     box-sizing: border-box;
   }
@@ -645,7 +647,7 @@ footer {
 
   .profile > img {
     position: absolute;
-    top: -100px;
+    top: -200px;
     right: 1px;
     width: 35%;
     border: none;
@@ -683,7 +685,7 @@ footer {
   }
   .discription2 > p,
   .work-explain {
-    margin: 0 23px;
+    margin: 0 45px;
   }
 
   .products {
