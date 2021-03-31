@@ -484,6 +484,10 @@ footer {
     margin-top: 0;
   }
 
+  .discription2 > p {
+    margin: 0 50px;
+  }
+
   .responsive {
     width: 100%;
     display: block;
@@ -714,10 +718,13 @@ footer {
     margin-left: 0;
     text-align: center;
   }
+  .work-size {
+    width: 80%;
+  }
 
   .work-explain {
-    padding: 0 20px;
-    text-align: left;
+    padding: 0 10px;
+    text-align: justify;
     font-size: 12px;
     margin-bottom: 15px;
   }
@@ -854,7 +861,7 @@ footer {
   .menu-content {
     width: 100%;
     max-width: 100vw;
-    height: 70%;
+    height: 50%;
     position: fixed;
     top: 0;
     left: 100%;
@@ -975,6 +982,7 @@ footer {
 
   .discription {
     width: 100%;
+    font-size: 12px;
   }
 
   .profile-sns {
@@ -997,10 +1005,18 @@ footer {
   .tool {
     text-align: center;
   }
+  .tool p {
+    font-size: 12px;
+  }
 
   .discription2 {
     width: 100%;
     text-align: left;
+  }
+
+  .discription2 > p {
+    font-size: 12px;
+    margin: 0 20px;
   }
 
   .products {
@@ -1018,6 +1034,9 @@ footer {
     text-align: center;
   }
 
+  .work-size {
+    width: 100%;
+  }
   .work-explain {
     text-align: left;
     font-size: 12px;
